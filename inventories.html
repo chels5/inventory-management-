@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=" stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inventories</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<br>
+   
+<table class="table table-dark">
+  <thead style="height: 5px;">
+    <tr>
+      <th scope="col" style="color: rgb(167, 56, 56);"><i class="fa fa-bars" aria-hidden="true"></i> Nav Menu</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+     
+      <th scope="row" style="color: rgb(167, 56, 56);"> <a href="#" class="link-danger"><i class="fa fa-tachometer" aria-hidden="true"></i>  Dashboard</a> </th>
+    </tr>
+    <tr>
+      <th scope="row" style="color: rgb(185, 56, 56);" ><a href="#" class="link-danger"><i class="fa fa-university" aria-hidden="true"></i>  Inventories</a> </th>
+    </tr>
+    <tr>
+      <th scope="row" style="color: rgb(185, 56, 56);" ><a href="#" class="link-danger"><i class="fa fa-money" aria-hidden="true"></i>  Sales</a> </th>
+    </tr>
+    <tr>
+      <th scope="row" style="color: rgb(185, 56, 56);" ><a href="#" class="link-danger"><i class="fa fa-exchange" aria-hidden="true"></i>  Stock</a> </th>
+    </tr>
+    <tr>
+      <th scope="row" style="color: rgb(185, 56, 56);"  ><a href="#" class="link-danger"><i class="fa fa-user" aria-hidden="true"></i>  Users</a> </th>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<br>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i class="fa fa-plus"></i>
+          Add Items
+        </button>
+ <br>       
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="">Modal Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+      
+              <div class="modal-body">
+      
+                <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="text">
+                </div>
+                <div class="mb-3">
+                  <label for="formGroupExampleInput2" class="form-label">Quantity</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="text">
+                </div>
+      
+                <div class="col-auto">
+                  Select Category 
+             <br>  
+             <br>   <label class="visually-hidden" for="autoSizingSelect"></label>
+                  <select class="form-select" id="autoSizingSelect">
+                    <option selected>Option</option>
+                  </select>
+                  </div>
+              <br>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Buying Price</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="text">
+                </div>
+              
+                <div class="mb-3">
+                  <label for="formGroupExampleInput" class="form-label">Selling Price</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="text">
+                  </div>
+      
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+ <br>         
+            <div>
+              Show
+              <select>
+                  <option>8</option>
+                  <option>16</option>
+                  <option>32</option>
+              </select>
+              entries 
+           </div>
+          <br>
+
+          <div>
+              Search: <input type="text" name="text">
+             </div>
+<br>
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">ID </th>
+                      <th scope="col">Name</th>
+                      <th scope="col">B.P</th>
+                      <th scope="col">S.P</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Category</th>
+                      <th scope="col">Sale <br><i class="fa fa-usd" aria-hidden="true"></i> </th>
+                      <th scope="col">Edit <br> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+                      <th scope="col">Delete <br><i class="fa fa-trash-o" aria-hidden="true"></i> </th>
+                                          
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Bag(Laptop)</td>
+                      <td>2000.0</td>
+                      <td>2500.0</td>
+                      <td>3</td>
+                      <td>Product</td>
+                      <td><button type="button" class="btn btn-warning"><i class="fa fa-usd" aria-hidden="true"></i></button>  </button> </td>
+                      <td><button type="button" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </button></td>
+                      <td><button type="button" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> </button> </td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Repair</td>
+                      <td>150.0</td>
+                      <td>200.0</td>
+                      <td>1</td>
+                      <td>Service</td>
+                      <td><button type="button" class="btn btn-warning"><i class="fa fa-usd" aria-hidden="true"></i></button>  </button> </td>
+                      <td><button type="button" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </button></td>
+                      <td><button type="button" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> </button> </td>
+
+                    </tr>
+                  
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Banana</td>
+                      <td>4.0</td>
+                      <td>6.0</td>
+                      <td>20</td>
+                      <td>Product</td>
+                      <td><button type="button" class="btn btn-warning"><i class="fa fa-usd" aria-hidden="true"></i></button>  </button> </td>
+                      <td><button type="button" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </button></td>
+                      <td><button type="button" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> </button> </td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Mango</td>
+                      <td>10.0</td>
+                      <td>15.0</td>
+                      <td>3</td>
+                      <td>Product</td>
+                      <td><button type="button" class="btn btn-warning"><i class="fa fa-usd" aria-hidden="true"></i></button>  </button> </td>
+                      <td><button type="button" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </button></td>
+                      <td><button type="button" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> </button> </td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Silk jacket</td>
+                      <td>1000.0</td>
+                      <td>4000.0</td>
+                      <td>40</td>
+                      <td>Product</td>
+                      <td><button type="button" class="btn btn-warning"><i class="fa fa-usd" aria-hidden="true"></i></button>  </button> </td>
+                      <td><button type="button" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </button></td>
+                      <td><button type="button" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> </button> </td>
+                      
+                    </tr>
+                      
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
